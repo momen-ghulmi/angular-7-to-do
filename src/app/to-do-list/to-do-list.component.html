@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="to-do__add" >
+    <app-to-do-add ></app-to-do-add>
+  </div>
+  <div class="to-do__list-empty text-center text-uppercase" *ngIf="toDoList.length === 0">
+    Empty
+  </div>
+  <div class="to-do__list">
+    <app-to-do-item  *ngFor="let toDo of toDoList; let itemIndex = index" [toDo]="toDo" [index]="itemIndex"></app-to-do-item>
+  </div>
+</div>

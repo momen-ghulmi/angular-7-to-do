@@ -1,0 +1,6 @@
+<div class="row form-group" >
+  <label for="label" class="col-sm-2 col-form-label text-right">what do want to add ?</label>
+  <div class="col-sm-8 pl-0">
+    <input type="text" class="mx-2 form-control form-inline" [(ngModel)]="label" id="label" (keyup.enter)="onClick()"/>
+  </div>
+  <button class="btn btn-dark col-sm-2" (click)="onClick()" >Add</button></div>

@@ -1,0 +1,1 @@
+<div class="to-do" [ngClass]="{done: toDo.done === true}"><span>{{ toDo.label }}{{ toDo.id }}</span> <span class="float-right" (click)="onRemove()">remove</span><span *ngIf="toDo.done === false" class="float-right px-3" (click)="onDone()">done</span></div>
